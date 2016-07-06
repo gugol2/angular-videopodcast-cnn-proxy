@@ -5,7 +5,7 @@ version 0.15.1.
 
 ## Info
 
-* AngularJS 1.5.6
+* AngularJS 1.5.x
 * Bootstrap 3
 * Unit tested except element directives
 * Precises a node proxy not contained in this repo
