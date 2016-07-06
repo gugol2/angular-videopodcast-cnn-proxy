@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+	<div class="podcast--title--description">
+			
+		<h3>
+			<a ng-class="{'text-warning' : selectedClip===invalidSelectedClip, 'text-danger' : selectedClip===emptyFeedSelectedClip}" ng-href="{{podLink}}" target="_blank">
+				{{podTitle}}
+			</a>
+
+		</h3>
+		
+		<div>
+			<h5>{{podDescrition}}</h5>
+		</div>
+	</div>
+	
+
+	<div class="podcast--content">
+
+		<clip-list feed-items="feedItems" selected-clip="selectedClip"></clip-list>
+
+	</div>
+</div>

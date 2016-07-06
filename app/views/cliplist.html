@@ -1,0 +1,42 @@
+<div class="panel panel-primary pannel--podcast" ng-class="{'pannel--podcast--warning' : clipSelected===invalidSelectedClip, 'pannel--podcast--error' : clipSelected===emptyFeedSelectedClip}">
+
+<div class="row panel-body row--same--height">
+
+  <div class="col-sm-5 same--height"> 
+
+    <div id="clip--area" class="panel panel-default">
+
+      <div class="panel-heading" id="panel--heading--search--box">
+
+        <div class="row">
+          <div class="col-sm-8 col-md-9 col-lg-10" ng-show="itemsFeed.length > 0">
+            <input id="input--search--box" type="text" class="form-control" placeholder="Search" ng-model="search.title" ng-keyup="moveTo($event)"/>
+          </div>
+
+          <div class="col-sm-2">
+            <span class="badge badgecustom" ng-show="itemsFeed.length > 0">{{(itemsFeed | filter:search).length}} Items</span>
+          </div>
+        
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12" id="clip--list--strict">
+          <ul class="list-group">
+            <a class="list-group-item row" ng-repeat="feedItem in itemsFeed | filter:search" ng-class="{active: feedItem.title[0] == currentFeedItem.title}" href="" ng-click="playClip(feedItem, $index)">
+              <span class="col-xs-10 col-lg-11">{{feedItem.title[0]}}</span>
+              <span class="glyphicon glyphicon-play-circle col-xs-1"></span>                                         
+            </a>                
+          </ul>  
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <videoarea current-feed-item="currentFeedItem" class="col-sm-7 same--height" startauto="auto" no-valid-link="noValidLink"></videoarea>
+  
+</div>
+
+</div>  

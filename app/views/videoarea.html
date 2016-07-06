@@ -1,0 +1,19 @@
+
+<div class="panel panel-default pannel--video--custom">
+
+	<div class="embed-responsive embed-responsive-16by9 panel-body">
+		<video id="clip--video" ng-hide="noValidLink" ng-src="{{currentItemFeed && (currentItemFeed.link[0] | safeUrl) || ''}}" controls autoplay ng-if="startauto"></video>
+		
+		<div class="text-center no--video">
+			<span ng-show="noValidLink" class="glyphicon glyphicon-alert" aria-hidden="true">&nbsp;No video available</span>
+		</div>             
+	</div>
+
+	<div class="current--clip--des panel-footer">
+		<p ng-show="currentItemFeed.contentSnippet">{{currentItemFeed.contentSnippet}}</p>
+	</div> 
+
+</div>
+
+
+

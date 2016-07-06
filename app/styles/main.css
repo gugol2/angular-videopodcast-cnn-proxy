@@ -1,0 +1,366 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+/* JSC tweaks */
+html{
+  background-color: #f8f8f8;
+}
+
+.navbar--custom{
+  margin-bottom: 10px;
+}
+
+.navbar--text--custom{
+  width: 98%;
+}
+
+/*logo in the navbar*/
+.navbar--brand--custom{
+  padding-top: 0%;
+  padding-right: 1%;
+  padding-bottom: 0%;
+  padding-left: 1%;
+}
+
+a.navbar--brand--custom {
+  height: 37px;
+}
+
+#feed--selector--box:hover{
+  
+}
+
+/*fixed height for the title and description div*/
+.podcast--title--description{
+  height: 80px;
+}
+
+.podcast--content{
+  
+}
+
+/*colums with the same height*/
+.same--height{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.row.row--same--height{
+  overflow: hidden; 
+}
+
+.pannel--podcast{
+
+  background-color: #eeeeee;
+
+  background-image: -webkit-linear-gradient(left, #eeeeee, #f8f8f8, #eeeeee, #f8f8f8, #eeeeee);
+  background-image: -moz-radial-gradient(left, #eeeeee, #f8f8f8, #eeeeee, #f8f8f8, #eeeeee);
+  background-image: -o-linear-gradient(left, #eeeeee, #f8f8f8, #eeeeee, #f8f8f8, #eeeeee);
+  background-image: linear-gradient(to right, #eeeeee, #f8f8f8, #eeeeee, #f8f8f8, #eeeeee);  
+
+}
+
+.pannel--podcast--error{
+  background-color: #f2dede;
+  background-image: -webkit-linear-gradient(left, #f2dede, #f2dede, #f2dede, #f2dede, #f2dede);
+  background-image: -moz-radial-gradient(left, #f2dede, #f2dede, #f2dede, #f2dede, #f2dede);
+  background-image: -o-linear-gradient(left, #f2dede, #f2dede, #f2dede, #f2dede, #f2dede);
+  background-image: linear-gradient(to right, #f2dede, #f2dede, #f2dede, #f2dede, #f2dede);
+}
+
+.pannel--podcast--warning{
+  background-color: #fcf8e3;
+  background-image: -webkit-linear-gradient(left, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3);
+  background-image: -moz-radial-gradient(left, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3);
+  background-image: -o-linear-gradient(left, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3);
+  background-image: linear-gradient(to right, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3, #fcf8e3);
+}
+
+
+#clip--area{
+  
+  margin-bottom: 0px;
+
+  border: hidden;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  background-color: transparent;
+}
+
+#panel--heading--search--box{
+  border: 0.5px solid #ddd;
+  border-radius: 4px;
+}
+
+#input--search--box{
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+
+.badgecustom{
+  margin-top: 10%;
+}
+
+#clip--list--strict{
+  padding-top: 10%;
+}
+
+#clip--list--strict ul{
+  min-height:360px;
+  height:360px; 
+  max-height:360px;
+  overflow-y:scroll;
+  overflow-x:hidden; 
+  border: 0.1px solid #e7e7e7;
+  border-radius: 4px;
+}
+
+#clip--list--strict ul a{
+  font-size: medium;
+  height: 90px;
+  padding: 5%;
+}
+
+.to--right{
+  float: right;
+}
+
+/*To center the no video message*/
+.no--video{
+  color: white;
+  padding-top: 25%;
+}
+
+/*pannel of the video*/
+.pannel--video--custom{
+
+  border-color:transparent;
+  
+  margin-bottom: 0px;
+
+  background-color: #484848;
+  background-image: -webkit-radial-gradient(#080808, #484848);
+  background-image: -moz-radial-gradient(#080808, #484848); 
+  background-image: -o-radial-gradient(#080808, #484848);
+  background-image: radial-gradient(#080808, #484848);   
+  
+}
+
+/*Description of the video being played*/
+.current--clip--des{
+  height: 68px;
+  text-align: center;
+  color:white;
+  
+  background-color: #484848; /*fallback*/
+  background-image: -webkit-radial-gradient(#080808, #484848);
+  background-image: -moz-radial-gradient(#080808, #484848);
+  background-image: -o-radial-gradient(#080808, #484848);
+  background-image: radial-gradient(#080808, #484848);  
+  
+  overflow: hidden;
+}
+
+.current--clip--des p{
+  padding: 5px 0;
+}
+
+.footer--custom{
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  margin-top: 10px;
+}
+
+/*exact media query for layout 1280x720*/
+@media all and (min-width: 1280px) and (max-width:1280px) {
+
+  .navbar--custom{
+    margin-bottom: 0px;
+    height: 63px;
+  }
+
+  #clip--list--strict ul{
+    min-height:320px;
+    height:320px; 
+    max-height:320px;
+    overflow-y:scroll;
+    overflow-x:hidden; 
+    border: 0.1px solid #e7e7e7;
+    border-radius: 4px;
+  }
+
+  #clip--list--strict ul a{
+    font-size: medium;
+    height: 80px;
+    padding: 5%;
+  }
+
+  .pannel--podcast{
+    margin-bottom: 10px;
+  }
+
+  .footer--custom{
+    font-size: 90%;
+    margin-top: 5px;
+  }
+
+}
+
+
+/* Responsive rows in the panel-heading for medium devices like tablets*/
+@media screen and (max-width: 1150px) and (min-width: 768px) {
+
+  .podcast--title--description {
+    height: auto;
+  }
+
+  #clip--list--strict ul{
+    min-height:260px;
+    height:260px; 
+    max-height:260px;
+  }
+
+  #clip--list--strict ul a{
+    height: 65px;
+    font-size: 90%;
+  }
+
+  .current--clip--des{
+    height: auto;
+  }
+
+}
+
+
+/* Responsive rows in the panel-heading for small devices like smartphones*/
+@media screen and (max-width: 767px){
+
+  .navbar--custom {
+    margin-bottom: 5px;
+  }
+
+  .podcast--title--description{
+    height: auto;
+  }
+
+  .badgecustom {
+    margin-top: 2%;
+    float: right;
+  } 
+
+  #clip--list--strict{
+    padding-top: 5%;
+  }
+
+  #clip--list--strict ul{
+    min-height:160px;
+    height:160px; 
+    max-height:160px;
+  }
+
+  #clip--list--strict ul a{
+    font-size: small;
+    height: 40px;
+    padding: 1%;
+  }
+
+  .current--clip--des{
+    height: auto;
+  }
+
+  .footer--custom p{
+    text-align: center;
+  }
+
+}
+
+
+

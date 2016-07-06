@@ -1,0 +1,30 @@
+<div class="navbar navbar-default navbar--custom">
+  <div class="container-fluid">
+    <div class="navbar-text navbar--text--custom">
+      <a class="navbar-brand navbar--brand--custom" href="#">
+        <img alt="Logo" src="images/podcast.png">
+      </a>
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button id="feed--selector--button" type="button" class="btn btn-primary dropdown-toggle" ng-class="{'btn-warning' : selectedClip===invalidSelectedClip,'btn-danger' : selectedClip===emptyFeedSelectedClip}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" auto-focus="true">
+            {{loadButonText}} 
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li ng-repeat="feedSrc in feedSources" ng-if="$index > 1">
+              <a href="#/" ng-click="loadFeed(feedSrc)">{{feedSrc.text}}</a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <a href="#/" ng-click="loadNewFeed(feedSources[1])">{{feedSources[1].text}}</a>
+            </li>
+          </ul>
+        </div>
+        <input id="feed--selector--box" type="url" class="form-control" aria-label="..." placeholder="Enter Feed URL" ng-model="feedSrc.url" ng-change="loadButonText = feedSources[1].text" ng-disabled="checked" ng-keydown="$event.which == 13 && loadFeed({text:feedSources[1].text, url:feedSrc.url})">
+
+      </div>
+    </div>
+  </div> 
+</div>   
+
+
