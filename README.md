@@ -41,3 +41,7 @@ version 0.15.1.
 
 Running `grunt test` will run the unit tests with karma.
 
+
+### Live Demo ###
+
+* [https://angular-videopodcast-cnn-proxy.herokuapp.com/#/](https://angular-videopodcast-cnn-proxy.herokuapp.com/#/)
