@@ -36,7 +36,7 @@ version 0.15.1.
 
 3. Run `grunt` for building, `grunt serve` for preview the develpoment code and `grunt serve:dist` for preview the production code.
 
-4. If the node proxy was installed in another machine or if you have any problems with the proxy, set the ip or dns of that machine in ´var apiHost` (line 59 of /app/scripts/services/dataservice.js)
+4. If the node proxy was installed in another machine or if you have any problems with the proxy, set the ip or dns of that machine in `var apiHost` (line 59 of /app/scripts/services/dataservice.js)
 
 
 ## Testing
