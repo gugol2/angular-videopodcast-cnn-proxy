@@ -46,4 +46,4 @@ Running `grunt test` will run the unit tests with karma.
 
 ### Live Demo ###
 
-* [https://angular-videopodcast-cnn-proxy.herokuapp.com/#/](https://angular-videopodcast-cnn-proxy.herokuapp.com/#/)
+* [http://angular-videopodcast-cnn-proxy.herokuapp.com/#/](http://angular-videopodcast-cnn-proxy.herokuapp.com/#/)
